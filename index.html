@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clientes y Citas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Clientes y Citas</h1>
+        <form id="client-form">
+            <label for="client-name">Nombre del Cliente:</label>
+            <input type="text" id="client-name" required>
+            <br><label for="appointment-date">Fecha de la Cita:</label>
+            <input type="date" id="appointment-date" required>
+            <br><label for="description">Descripción:</label>
+            <input type="text" id="description">
+            <br><label for="amount">Monto Pagado:</label>
+            <input type="number" id="amount" placeholder="0">
+        
+            <div class="currency-options">
+                <label><input type="radio" name="currency" value="bolivares"> Bolívares</label>
+                <label><input type="radio" name="currency" value="dolares"> Dólares</label>
+            </div>
+            
+            <br><label for="whatsapp-number">Número de WhatsApp:</label>
+            <input type="text" id="whatsapp-number" placeholder="Ej. 1234567890">
+            <button type="button" onclick="saveAppointment()">Guardar Cita</button>
+        </form>
+
+        <h2>Citas Pendientes</h2>
+        <div id="citas-pendientes"></div>
+        <h2>Citas Cumplidas</h2>
+        <div id="citas-cumplidas"></div>
+        <h2>Citas Pospuestas</h2>
+        <div id="citas-pospuestas"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
