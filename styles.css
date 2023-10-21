@@ -1,3 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +15,15 @@
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 120px rgb(0, 81, 255);
 }
 
 form {
@@ -51,10 +63,14 @@ button {
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #547cff;
+    /* Cambia el color al pasar el mouse sobre el botón */
+    color: rgb(0, 183, 255);
+            box-shadow: 0 0 30px rgb(0, 81, 255);
 }
 
 #citas-pendientes,
@@ -69,7 +85,7 @@ button:hover {
 
 @media (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 }
