@@ -16,7 +16,7 @@ h3 {
 
 .container {
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 81, 255);
     border-radius: 10px;
     padding: 30px;
     transition: box-shadow 0.3s ease;
@@ -56,6 +56,7 @@ input[type="number"] {
 button {
     padding: 10px 20px;
     background-color: #1783ff;
+    box-shadow: 0 0 20px rgba(0, 81, 255);
     color: white;
     border: 5px;
     border-radius: 15px;
@@ -70,7 +71,7 @@ button:hover {
     background-color: #547cff;
     /* Cambia el color al pasar el mouse sobre el botón */
     color: rgb(0, 183, 255);
-            box-shadow: 0 0 30px rgb(0, 81, 255);
+    box-shadow: 0 0 30px rgb(0, 81, 255);
 }
 
 #citas-pendientes,
@@ -81,13 +82,6 @@ button:hover {
 
 .cita {
     margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
 }
 
 /* Estilos específicos para dispositivos con pantalla de hasta 480px (como smartphones) */
