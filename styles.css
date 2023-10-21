@@ -45,7 +45,7 @@ button {
     padding: 10px 20px;
     background-color: #1783ff;
     color: white;
-    border:5px;
+    border: 5px;
     border-radius: 15px;
     cursor: pointer;
     margin-right: 10px;
@@ -65,4 +65,26 @@ button:hover {
 
 .cita {
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos específicos para dispositivos con pantalla de hasta 480px (como smartphones) */
+@media (max-width: 480px) {
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"] {
+        width: calc(100% - 16px);
+        /* Considerando el padding */
+    }
+
+    button {
+        width: 100%;
+    }
 }
