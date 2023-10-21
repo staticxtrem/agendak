@@ -85,7 +85,7 @@ button:hover {
 
 @media (max-width: 768px) {
     .container {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 }
@@ -96,7 +96,7 @@ button:hover {
     input[type="text"],
     input[type="date"],
     input[type="number"] {
-        width: calc(100% - 16px);
+        width: calc(100% - 64px);
         /* Considerando el padding */
     }
 
